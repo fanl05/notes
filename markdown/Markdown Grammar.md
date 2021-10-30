@@ -55,3 +55,5 @@ a
 <font color="red">红色</font><br/>
 <font color="#0000dd">浅蓝色</font><br /> 
 <font color="#000066">深蓝色</font><br /> 
+ - 居中
+<center>居中文字</center>
