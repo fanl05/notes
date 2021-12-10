@@ -99,3 +99,24 @@ git push [远程地址/远程地址别名] [远程仓库名]: push 到远程仓�
 2. GitFlow
 ![avator](./img/gitflow.png)
 3. Forking: 在 GitFlow 的基础上，更充分利用 git 的 fork 和 pull request 功能。更适合安全可靠地管理大团队的开发者，并且能接受不信任贡献者的提交
+## Cherry-pick
+将指定的 commit 应用于当前分支
+```cmd
+git cherry-pick [commit hash]
+```
+将该分支的最新 commit 应用于当前分支
+```cmd
+git cherry-pick [feature name]
+```
+将指定的多个 commit 应用于当前分支
+```
+git cherry-pick [commit hash A] [commit hash B]
+```
+将连续的多个 commit 应用于当前分支，不包括 A
+```
+git cherry-pick [commit hash A]..[commit hash B]
+```
+将连续的多个 commit 应用于当前分支，包括 A
+```
+git cherry-pick [commit hash A]^..[commit hash B]
+```
